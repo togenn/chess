@@ -1,0 +1,15 @@
+﻿  chess.cpp
+C:\Users\peral\source\repos\chess\chess\SDL\SDL2-2.0.20\include\SDL_surface.h(100,41): error C2371: 'SDL_Surface': redefinition; different basic types
+C:\Users\peral\source\repos\chess\chess\SDL\SDL2-2.0.20\include\SDL_surface.h(95): message : see declaration of 'SDL_Surface'
+  main.cpp
+C:\Users\peral\source\repos\chess\chess\SDL\SDL2-2.0.20\include\SDL_surface.h(100,41): error C2371: 'SDL_Surface': redefinition; different basic types
+C:\Users\peral\source\repos\chess\chess\SDL\SDL2-2.0.20\include\SDL_surface.h(95): message : see declaration of 'SDL_Surface'
+  pawn.cpp
+C:\Users\peral\source\repos\chess\chess\SDL\SDL2-2.0.20\include\SDL_surface.h(100,41): error C2371: 'SDL_Surface': redefinition; different basic types
+C:\Users\peral\source\repos\chess\chess\SDL\SDL2-2.0.20\include\SDL_surface.h(95): message : see declaration of 'SDL_Surface'
+  piece.cpp
+C:\Users\peral\source\repos\chess\chess\SDL\SDL2-2.0.20\include\SDL_surface.h(100,41): error C2371: 'SDL_Surface': redefinition; different basic types
+C:\Users\peral\source\repos\chess\chess\SDL\SDL2-2.0.20\include\SDL_surface.h(95): message : see declaration of 'SDL_Surface'
+  sprites.cpp
+C:\Users\peral\source\repos\chess\chess\SDL\SDL2-2.0.20\include\SDL_surface.h(100,41): error C2371: 'SDL_Surface': redefinition; different basic types
+C:\Users\peral\source\repos\chess\chess\SDL\SDL2-2.0.20\include\SDL_surface.h(95): message : see declaration of 'SDL_Surface'
