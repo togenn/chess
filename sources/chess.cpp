@@ -200,7 +200,7 @@ void chess::wait_for_events() {
 					board[button_up.get_board_index()] = std::move(piece_grabbed);
 					board[button_up.get_board_index()]->set_position(button_up);
 
-					if (move.move_type == move_type::en_pasant) {
+					if (move._move_type == move_type::en_pasant) {
 
 						if (turn == color::white) {
 							board[get_board_index({ button_up.x, button_up.y + 1 })] = nullptr;
@@ -209,12 +209,12 @@ void chess::wait_for_events() {
 							board[get_board_index({ button_up.x, button_up.y - 1 })] = nullptr;
 						}
 					}
-					else if (move.move_type == move_type::promotion) {
+					else if (move._move_type == move_type::promotion) {
 
 						board[button_up.get_board_index()] = std::make_unique<queen>(turn, *m_sprites, coordinates{ button_up.x, button_up.y });
 
 					}
-					else if (move.move_type == move_type::castle) {
+					else if (move._move_type == move_type::castle) {
 
 						if (move.pos.x == 6) {
 							//kingside
@@ -336,7 +336,7 @@ void chess::check_moves_for_check(std::vector<possible_move>& moves, std::unique
 		grabbed_piece->set_position({ move.pos.x, move.pos.y }, false);
 
 		std::unique_ptr<piece> en_pasant_pawn;
-		if (move.move_type == move_type::en_pasant) {
+		if (move._move_type == move_type::en_pasant) {
 
 			if (col == color::white) {
 				en_pasant_pawn = std::move(board[get_board_index({ move.pos.x, move.pos.y + 1 })]);
@@ -363,7 +363,7 @@ void chess::check_moves_for_check(std::vector<possible_move>& moves, std::unique
 		grabbed_piece->set_position({ original_pos.x, original_pos.y }, false);
 		
 		
-		if (move.move_type == move_type::en_pasant) {
+		if (move._move_type == move_type::en_pasant) {
 
 
 			if (col == color::white) {

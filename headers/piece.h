@@ -17,7 +17,7 @@ enum class move_type {
 
 struct possible_move {
 	coordinates pos;
-	move_type move_type = move_type::normal;
+	move_type _move_type = move_type::normal;
 };
 
 class piece {
